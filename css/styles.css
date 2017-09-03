@@ -1,0 +1,153 @@
+
+
+
+body {
+	
+	height: 1500px;
+	}
+
+
+/* Article Section*/
+
+  .c-layout {
+	display: flex;
+	padding: 20px 50px;
+	margin: 40px auto 0 auto;
+	line-height: 1.65;
+	border: 1px solid grey;
+	background-color: #e2e2e2;
+
+
+  }
+
+  .main {
+	flex:3;
+	order: 2;
+	padding: 20px;
+	
+  }
+
+  .second {
+	flex: 1;
+	order: 1;
+	
+  }
+
+ .third {
+	flex: 1;
+	order: 3;
+
+ }
+
+
+
+
+/* Colored boxes with margins*/
+
+
+
+
+	.box-holder {
+		background-color: #e2e2e2;
+		display:flex;
+		justify-content: space-around;
+		border: 1px solid grey;
+		
+	}
+	.box-cont {
+		
+		padding: 20px;
+		width: 30%;
+		box-sizing: border-box;
+		margin: 30px 0;
+
+	}
+	.box-cont:nth-child(1) {background-color: pink;}
+	.box-cont:nth-child(2) {background-color: teal;}
+	.box-cont:nth-child(3) {background-color: tan;}
+
+
+	@media(max-width: 900px) {
+		.box-holder {
+			flex-direction: column;
+			
+		}
+	}
+		@media(max-width: 900px) {
+		.box-cont {
+
+			width: 100%;
+			margin: 0;
+
+		}
+	}
+
+		@media(max-width: 900px) {
+		.c-layout {
+			flex-direction: column;
+			
+		}
+	}
+
+		@media(max-width: 900px) {
+		.main {
+			order: 1;
+			
+		}
+	}
+
+
+/*  Centering words in a box */
+
+	.box {
+		background-color: #242943;
+		height: 400px;
+		max-width: 750px;
+		color: #fff;
+		display: flex;
+		margin:auto;
+
+
+	}
+	.words {
+		margin: auto;
+
+
+	}
+
+	.block {
+		background-color:#1b1b1b;
+		height: 50px;
+	}
+
+/* Wrapping items */
+
+	.holder {
+		background-color: #e2e2e2;
+		display: flex;
+		padding: 20px;
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin-bottom: 5%;
+
+
+
+
+
+
+	}
+
+	.boxs {
+		background-color: #242943;
+		height: 100px;
+		width:150px;
+		padding: 10px;
+		text-align: center;
+		margin: 10px;
+		color:white;
+		font-size: 25px;
+
+
+		
+	}
